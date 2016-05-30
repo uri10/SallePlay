@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" content="SallePlay">
+    <meta name="description" content="Web de musica online">
+    <meta name="author" content="Santi y Oriol">
+
+    <title>SallePlay</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+  </head>
+
+  <body>
+      <header>
+      <nav class="navbar-fixed-top">
+        
+        <div class="row search">
+          <div class="col-sm-8 col-sm-offset-2">
+            <form role="input-group form">
+              <div>
+                 <img style="margin-left:450px; padding: 10px;" src="htdocs/imag/logo.png" alt="Musica" height="102" width="102">
+              </div>
+              <div class="input-group form">
+                <input type="text" placeholder="Artist, album, song" class="form-control input-sm" id="search-text">
+                <span class="input-group-btn">
+                  <button class="btn btn-success btn-sm" id="search-button" type="submit" value="Mostrar" onclick="mostrar()"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="jumbotron" id='ver'>
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3 rad" id="recomendacion0">
+          <div class="card">
+            <img class="card-img-top recomendacion_img" data-src="holder.js/100px180/?text=Image cap" src="htdocs/imag/songNotFound.jpg" alt="Image cap [100%x180]" data-holder-rendered="true">
+            <div class="card-block">
+              <p class="card-text nombreCancion"></p>
+              <p class="card-text nombreArtista"></p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-3 col-sm-3 col-xs-3 rad" id="recomendacion1">
+          <div class="card">
+            <img class="card-img-top recomendacion_img" data-src="holder.js/100px180/?text=Image cap" src="htdocs/imag/songNotFound.jpg" alt="Image cap [100%x180]" data-holder-rendered="true">
+            <div class="card-block">
+              <p class="card-text nombreCancion"></p>
+              <p class="card-text nombreArtista"></p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-3 col-sm-3 col-xs-3 rad" id="recomendacion2">
+          <div class="card">
+            <img class="card-img-top recomendacion_img" data-src="holder.js/100px180/?text=Image cap" src="htdocs/imag/songNotFound.jpg" alt="Image cap [100%x180]" data-holder-rendered="true">
+            <div class="card-block">
+              <p class="card-text nombreCancion"></p>
+              <p class="card-text nombreArtista"></p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-3 col-sm-3 col-xs-3 rad" id="recomendacion3">
+          <div class="card">
+            <img class="card-img-top recomendacion_img" data-src="holder.js/100px180/?text=Image cap" src="htdocs/imag/songNotFound.jpg" alt="Image cap [100%x180]" data-holder-rendered="true">
+            <div class="card-block">
+              <p class="card-text nombreCancion"></p>
+              <p class="card-text nombreArtista"></p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-3 col-sm-3 col-xs-3 rad" id="recomendacion4">
+          <div class="card">
+            <img class="card-img-top recomendacion_img" data-src="holder.js/100px180/?text=Image cap" src="htdocs/imag/songNotFound.jpg" alt="Image cap [100%x180]" data-holder-rendered="true">
+            <div class="card-block">
+              <p class="card-text nombreCancion"></p>
+              <p class="card-text nombreArtista"></p>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+
+
+    <div class="col-sm-12 col-lg-12 col-xs-12 contenido" id="oculto" style='display:none;'>
+      <ul class="list-group col-sm-12 col-lg-12 col-xs-12">
+        <li class="list-group-item col-sm-12 col-lg-12 col-xs-12 styled_title">
+          <h3 class="title_2">SEARCH RESULTS</h3>
+        </li>
+      </ul>
+      <ul class="list-group col-sm-12 col-lg-12 col-xs-12" id="busquedaView">
+        <li class="list-group-item col-sm-12 col-lg-12 col-xs-12 busquedaView-element" id="busquedaView-template" style="background-color:transparent" data-idArtist="0">
+          <img class="col-sm-4 col-lg-4 col-xs-4 image-element" src="htdocs/imag/songNotFound.jpg" style="padding:0px;" alt="imagen relevante">
+          <div class="col-sm-4 col-lg-4 col-xs-8">
+            <p class="col-sm-12 col-lg-12 col-xs-12 nombreCancion"></p>
+            <p class="col-sm-12 col-lg-12 col-xs-12 nombreAlbum"></p>
+            <p class="col-sm-12 col-lg-12 col-xs-12 nombreArtista"></p>
+          </div>
+          <div class="col-sm-4 col-lg-4 col-xs-12 play-style">
+            <a href="#!" class="col-sm-6 col-lg-6 col-xs-6 final">
+              <span class="glyphicon glyphicon-play play/pause-button" data-play="-1"></span> 
+            </a>
+            <a href="#!" class="col-sm-6 col-lg-6 col-xs-6 resize final">
+              <span class="glyphicon glyphicon-heart aux-button" data-button="0" data-qFavorito="-1"></span>  
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="navbar navbar-fixed-bottom">
+      <ul class="nav navbar-nav navbar-right">
+        <li><audio controls id="audioPlayer"></audio></li>
+      </ul>
+    </nav>
+
+
+    <div class="col-sm-12 col-lg-12 col-xs-12">
+      <ul class="list-group col-sm-12 col-lg-12 col-xs-12">
+        <li class="list-group-item col-sm-12 col-lg-12 col-xs-12 styled_title">
+          <h3 class="title_2">FAVORITES</h3>
+        </li>
+      </ul>
+      <ul class="list-group col-sm-12 col-lg-12 col-xs-12" id="favoritosView">
+        <li class="list-group-item col-sm-12 col-lg-12 col-xs-12" id="favoritosView-template" data-idArtist="0">
+          <img class="col-sm-4 col-lg-4 col-xs-4 image-element" src="htdocs/imag/songNotFound.jpg" style="padding:0px;" alt="imagen relevante">
+          <div class="col-sm-6 col-lg-6 col-xs-8">
+            <p class="col-sm-12 col-lg-12 col-xs-12 nombreCancion"></p>
+            <p class="col-sm-12 col-lg-12 col-xs-12 nombreAlbum"></p>
+            <p class="col-sm-12 col-lg-12 col-xs-12 nombreArtista"></p>
+          </div>
+          <div class="col-sm-2 col-lg-2 col-xs-12 play-style">
+            <a href="#!" class="col-sm-6 col-lg-6 col-xs-6">
+              <span class="glyphicon glyphicon-play play/pause-button col-sm-12 col-lg-12 col-xs-12" data-play="-1"></span> 
+            </a>
+            <a href="#!" class="col-sm-6 col-lg-6 col-xs-6">
+              <span class="glyphicon glyphicon-trash aux-button col-sm-12 col-lg-12 col-xs-12" data-button="1" data-clicked="0" data-qFavorito="-1"></span>  
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <!--<script type="text/javascript" src="javascript/mainSanti+-V.js"></script>-->
+</body>
+
+<footer>
+<p style="color:#FFFFFF">Web desarrollada por Santi y Oriol</p>
+</footer>
+</html>

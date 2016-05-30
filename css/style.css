@@ -1,0 +1,434 @@
+header{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+/*Card things*/
+.card{
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+.card-img-top{
+	height: 100%; 
+	width: 100%; 
+}
+.card:hover{
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+	transform : scale(1.1);
+	-moz-transform : scale(1.1);      
+	-webkit-transform : scale(1.1);   
+	-o-transform : scale(1.1); 
+	transition-duration: 1s;
+}
+.card-block{
+	background-color: white;
+	opacity: 0.8;
+}
+.jumbotron p{
+	color: #0D1419;
+	opacity: 1;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 110%;
+}
+.jumbotron{
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+/*!Card things*/
+
+/*Element design things*/
+a{
+	color: white;
+	font-size: 18px;
+}
+.final{
+	color: white;
+	font-size: 30px;
+}
+.list-group{
+	margin-bottom: 5px;
+}
+#favoritosView > li, #designersView > li{
+	background-color: #0D1419;
+	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+	-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+	box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+	padding-left: 9px;
+	border: none;
+}
+#favoritosView > li:nth-child(1n){
+	background-color: #0D1419;
+	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+	-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+	box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+	padding-left: 9px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border: none;
+}
+#busquedaView > li{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000000;	
+	padding-left: 9px;
+	border: none;
+	margin: 1px;
+}
+body{
+	height: 100% !important;
+	background-size: 100% !important;
+	background-repeat: repeat-y;
+	background-color: black;
+	padding-left: 9px;
+	overflow-x: hidden;
+}
+#busquedaView > li:nth-child(1n){
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000000;
+	padding-left: 9px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	vertical-align: center;
+	border: 2px solid none;
+	background-color: transparent;
+}
+.image-element{
+	border: 2px solid white;
+	width: 25%;
+}
+.play-style{
+	position: absolute !important;
+	top: 46%;
+	left: 75%;
+}
+.nombreAlbum{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	color: white;
+	margin: 5px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+}
+.nombreArtista{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-style: bold;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	color: white;
+	margin: 5px;
+	margin-top: 0px;
+	margin-left: 40px;
+}
+.nombreCancion{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	color: white;
+	margin: 5px;
+	margin-bottom: 25px;
+	margin-top: 100px;
+	margin-left: 40px;
+
+}
+
+.styled_title{
+	background-color: #FFFFFF;
+	border: none;
+	padding: 0px;
+}
+
+.title_2{
+	color: #000000;
+}
+
+h3{
+	color: white;
+	opacity: 1;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 160%;
+	margin-top: 10px;
+}
+@media (min-width: 768px){ 
+
+	/*Tema padding*/
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	  position: relative;
+	  min-height: 1px;
+	  padding-right: 1px;
+	  padding-left: 1px;
+	}
+	.arrow_box {
+		margin-top: 12px;
+		margin-bottom: 30px;
+		margin-right: 10px;
+		position: relative;
+		background: #0D1419;
+		border: 4px solid #0D1419;
+		border-top: 2px solid #0D1419;
+		border-radius: 4px;
+		width: 25%;
+		float: right;
+		-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+		-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+		box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+	}
+	.rad {
+		position: relative;
+		min-height: 1px;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.jumbotron p{
+		margin: 0px;
+		color: #0D1419;
+		opacity: 1;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 90% !important;
+	}
+}
+@media (min-width: 640px) and (max-width: 768px) {
+	.final{
+		color: white;
+		font-size: 30px !important;
+	}
+	.play-style{
+		position: absolute !important;
+		top: 44%;
+		left: 75%;
+	}
+	.play-style{
+		position: relative;
+		top: 50%;
+		left: 70%;
+		width: 30%;
+	}
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	  position: relative;
+	  min-height: 1px;
+	  padding-right: 1px;
+	  padding-left: 1px;
+	}
+	.jumbotron p{
+		color: #0D1419;
+		opacity: 1;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 70%;
+		margin: -2px;
+	}
+	.rad {
+		position: relative;
+		min-height: 1px;
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+	.logo{
+		font-size: 16px;
+	}
+	.arrow_box {
+		margin-top: 12px;
+		margin-bottom: 30px;
+		margin-right: 10px;
+		position: relative;
+		background: #0D1419;
+		border: 4px solid #0D1419;
+		border-top: 2px solid #0D1419;
+		border-radius: 4px;
+		width: 150px !important;
+		float: right;
+		-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+		-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+		box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+	}
+	.arrow_box:after, .arrow_box:before {
+		top: 80%;
+		left: 50%;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	.arrow_box:after {
+		border-color: rgba(136, 183, 213, 0);
+		border-top-color: #0D1419;
+		border-width: 30px;
+		margin-left: -30px;
+	}
+	.arrow_box:before {
+		border-color: rgba(194, 225, 245, 0);
+		border-top-color: #0D1419;
+		border-width: 36px;
+		margin-left: -36px;
+	}
+}
+@media (min-width: 420px) and (max-width: 640px) {
+	.final{
+		color: white;
+		font-size: 25px !important;
+	}
+	.play-style{
+		position: absolute !important;
+		top: 42%;
+		left: 75%;
+	}
+	.nombreCancion, .nombreAlbum, .nombreArtista{
+		font-family: 'Raleway', sans-serif;
+		font-size: 11px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 400;
+		line-height: 20px;
+		color: white;
+		margin: 5px;
+		margin-top: 0px;
+	}
+	.play-style{
+		top: 50%;
+		left: 75%;
+		width: 25% !important;
+	}
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	  position: relative;
+	  min-height: 1px;
+	  padding-right: 1px;
+	  padding-left: 1px;
+	}
+	.jumbotron{
+		padding-top: 22px;
+		padding-bottom: 32px;
+	}
+	.jumbotron p{
+		opacity: 1;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 60%;
+		margin: -10px;
+		color: white;
+		z-index: 1000;
+	}
+	.card-block{
+		margin-top: -30px;
+		opacity: 0.4;
+		background-color: black;
+	}
+	.rad {
+		position: relative;
+		min-height: 1px;
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+	.logo{
+		font-size: 16px;
+	}
+	.arrow_box {
+		margin-top: 12px;
+		margin-bottom: 30px;
+		margin-right: 10px;
+		position: relative;
+		background: #0D1419;
+		border: 4px solid #0D1419;
+		border-top: 2px solid #0D1419;
+		border-radius: 4px;
+		width: 150px !important;
+		float: right;
+		-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+		-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+		box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.6);
+	}
+	.arrow_box:after, .arrow_box:before {
+		top: 80%;
+		left: 50%;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	.arrow_box:after {
+		border-color: rgba(136, 183, 213, 0);
+		border-top-color: #0D1419;
+		border-width: 30px;
+		margin-left: -30px;
+	}
+	.arrow_box:before {
+		border-color: rgba(194, 225, 245, 0);
+		border-top-color: #0D1419;
+		border-width: 36px;
+		margin-left: -36px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.final{
+		color: white;
+		font-size: 16px !important;
+	}
+	.play-style{
+		position: absolute !important;
+		top: 42%;
+		left: 75%;
+	}
+	.nombreCancion, .nombreAlbum, .nombreArtista{
+		font-family: 'Raleway', sans-serif;
+		font-size: 9px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 400;
+		line-height: 20px;
+		color: white;
+		margin: 5px;
+		margin-top: 0px;
+	}
+	.play-style{
+		top: 50%;
+		left: 75%;
+		width: 20% !important;
+	}
+
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	  position: relative;
+	  min-height: 1px;
+	  padding-right: 1px;
+	  padding-left: 1px;
+	}
+	.jumbotron{
+		margin-bottom: 5px;
+		padding-top: 7px;
+		padding-bottom: 17px;
+	}
+	.jumbotron p{
+		opacity: 1;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 40%;
+		margin: -10px;
+		color: white;
+		z-index: 1000;
+	}
+	.card-block{
+		margin-top: -30px;
+		opacity: 0.4;
+		background-color: black;
+	}
+	.rad {
+		position: relative;
+		min-height: 1px;
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+}
